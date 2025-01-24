@@ -1,0 +1,36 @@
+{
+  "name": "minecraft-bot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "bin": "bot.js",
+  "pkg": {
+    "targets": [
+      "node18-win-x64"
+    ],
+    "outputPath": "dist",
+    "assets": [],
+    "compress": "GZip",
+    "scripts": [
+      "bot.js"
+    ],
+    "options": [
+      "minimal-dependencies"
+    ],
+    "ignore": [
+      "node_modules/mineflayer/docs/**",
+      "node_modules/*/test/**",
+      "node_modules/*/tests/**",
+      "node_modules/*/example/**",
+      "node_modules/*/examples/**",
+      "node_modules/*/docs/**",
+      "node_modules/*/*.md",
+      "node_modules/*/*.txt"
+    ]
+  },
+  "dependencies": {
+    "mineflayer": "^4.8.1",
+    "mineflayer-pathfinder": "^2.4.5",
+    "prompts": "^2.4.2",
+    "vec3": "^0.1.8"
+  }
+}
